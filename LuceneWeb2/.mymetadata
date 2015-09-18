@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="LuenceWeb2"
+  id="myeclipse.1291886764500"
+  context-root="/LucenceWeb2"
+  j2ee-spec="5.0"
+  archive="LuenceWeb2.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="queryForm" type="index.query.struts.form.QueryForm" />
+    <form-bean name="simpleForm" type="index.query.struts.form.SimpleForm" />
+
+ </form-beans>
+
+  <global-exceptions />
+  <global-forwards >
+     
+     </global-forwards>
+  <action-mappings >
+    <action
+      path="/query"
+      attribute="queryForm"
+      input="/query.jsp"
+      name="queryForm"
+      scope="session"
+      validate ="true"
+      type="index.query.struts.action.QueryAction"
+      >
+      <forward name="fai" path="/fail.jsp" />
+      <forward name="suc" path="/suc.jsp" />
+    </action>
+    <action path="/simpleAction" 
+      attribute="simpleForm"
+      input="/index.jsp"
+      name = "simpleForm"
+      scope="request"
+      validate ="true"
+      type="index.query.struts.action.SimpleAction">
+      <forward name="fai" path="/fail.jsp" />
+      <forward name="suc" path="/Simp.jsp" />
+    </action>
+    
+   
+  
+    <action path="/activeQuery" type="index.query.struts.action.ActiveQueryAction">
+      <forward name="suc" path="/Simp.jsp" />
+      <forward name="fai" path="/fail.jsp" />
+    </action>
+    
+    
+    
+
+  </action-mappings>
+
+  <message-resources parameter="index.query.struts.ApplicationResources" />
+</struts-config>
+

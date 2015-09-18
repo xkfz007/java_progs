@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+  <form-beans>
+    <form-bean name="insertCollectionActionForm" type="luceneActionForm.insertCollectionActionForm" />
+    <form-bean name="indexDocActionForm" type="luceneActionForm.indexDocActionForm" />
+    <form-bean name="searchActionForm" type="luceneActionForm.searchActionForm" />
+    <form-bean name="moreResultsActionForm" type="luceneActionForm.moreResultsActionForm" />
+    <form-bean name="delCollectionActionForm" type="luceneActionForm.delCollectionActionForm" />
+  </form-beans>
+  
+  <global-forwards>
+    <forward name="ok" path="/ok.jsp" />
+  </global-forwards>
+  
+  <action-mappings>
+    <action name="insertCollectionActionForm" type="luceneAction.insertCollectionAction" path="/luceneAction/insertCollectionAction">
+      <forward name="insertOk" path="/collection.jsp" />
+      <forward name="insertError" path="/insert_error.jsp" />
+    </action>
+    
+    <action name="indexDocActionForm" type="luceneAction.indexDocAction" path="/luceneAction/indexDocAction">
+      <forward name="indexError" path="/index_error.jsp" />
+      <forward name="indexOk" path="/index_control.jsp" />
+    </action>
+    
+    <action name="searchActionForm" type="luceneAction.searchAction" path="/luceneAction/searchAction">
+      <forward name="showresults" path="/results.jsp" />
+    </action>
+    
+    <action name="moreResultsActionForm" type="luceneAction.moreResultsAction" path="/luceneAction/moreResultsAction">
+      <forward name="showresults" path="/results.jsp" />
+    </action>
+    
+    <action name="delCollectionActionForm" type="luceneAction.delCollectionAction" path="/luceneAction/delCollectionAction" >
+      <forward name="collection" path="/collection.jsp"/>
+    </action>
+  </action-mappings>
+</struts-config>
