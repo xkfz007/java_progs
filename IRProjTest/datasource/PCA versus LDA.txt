@@ -1,0 +1,14 @@
+PCA versus LDA
+Aleix M. Mart??nez, Member, IEEE, and
+Avinash C. Kak
+Abstract?In the context of the appearance-based paradigm for object
+recognition, it is generally believed that algorithms based on LDA (Linear
+Discriminant Analysis) are superior to those based on PCA (Principal Components
+Analysis). In this communication, we show that this is not always the case. We
+present our case first by using intuitively plausible arguments and, then, by
+showing actual results on a face database. Our overall conclusion is that when the
+training data set is small, PCA can outperform LDA and, also, that PCA is less
+sensitive to different training data sets.
+Index Terms?Face recognition, pattern recognition, principal components
+analysis, linear discriminant analysis, learning from undersampled distributions,
+small training data sets.
