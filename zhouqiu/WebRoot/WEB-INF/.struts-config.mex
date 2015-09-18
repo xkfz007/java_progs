@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/query.do" location="150,60" dimension="226,88" />
+  <StrutsActivity path="/simpleAction.do" location="360,240" dimension="150,100" />
+  <StrutsActivity path="/activeQuery.do" location="105,375" dimension="256,88" />
+  <StrutsActivity path="/fail.jsp" location="180,240" dimension="65,49" />
+  <StrutsActivity path="/suc.jsp" location="450,105" dimension="67,49" />
+  <StrutsActivity path="/query.jsp" location="510,15" dimension="79,49" />
+  <StrutsActivity path="/Simp.jsp" location="950,150" dimension="73,49" />
+  <StrutsActivity path="/index.jsp" location="570,165" dimension="77,49" />
+  <StrutsActivity path="Simp.jsp" location="650,350" dimension="69,49" />
+  <StrutsTransition id="/activeQuery.do,fai,/fail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="230,375" />
+      <AbsolutePoint location="230,289" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/query.jsp,null,/query.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="559,64" />
+      <AbsolutePoint location="559,90" />
+      <AbsolutePoint location="376,90" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/query.do,suc,/suc.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="376,120" />
+      <AbsolutePoint location="450,120" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/simpleAction.do,suc,/Simp.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="435,340" />
+      <AbsolutePoint location="435,538" />
+      <AbsolutePoint location="1251,538" />
+      <AbsolutePoint location="1251,174" />
+      <AbsolutePoint location="1023,174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/simpleAction.do,fai,/fail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="360,244" />
+      <AbsolutePoint location="245,244" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/query.do,fai,/fail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="195,148" />
+      <AbsolutePoint location="195,240" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/activeQuery.do,suc,/Simp.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="361,419" />
+      <AbsolutePoint location="824,419" />
+      <AbsolutePoint location="824,180" />
+      <AbsolutePoint location="950,180" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index.jsp,null,/simpleAction.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="608,214" />
+      <AbsolutePoint location="608,290" />
+      <AbsolutePoint location="510,290" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

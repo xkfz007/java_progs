@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry path="src" kind="src"/>
+	<classpathentry path="org.eclipse.jdt.launching.JRE_CONTAINER" kind="con"/>
+	<classpathentry path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4" kind="con"/>
+	<classpathentry path="lib/htmllexer.jar" kind="lib"/>
+	<classpathentry path="lib/htmlparser.jar" kind="lib"/>
+	<classpathentry path="lib/lucene-analyzers-2.9.4.jar" kind="lib"/>
+	<classpathentry sourcepath="E:/hfz/现代信息检索/大作业/lucene-2.9.4-src.zip" path="lib/lucene-core-2.9.4.jar" kind="lib"/>
+	<classpathentry path="lib/lucene-highlighter-2.9.4.jar" kind="lib"/>
+	<classpathentry path="lib/lucene-smartcn-2.9.4.jar" kind="lib"/>
+	<classpathentry path="lib/pdfbox-app-1.3.1.jar" kind="lib"/>
+	<classpathentry path="bin" kind="output"/>
+</classpath>
