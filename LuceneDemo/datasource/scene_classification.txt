@@ -1,0 +1,26 @@
+Demir G¡§okalp and Selim Aksoy
+Department of Computer Engineering
+Bilkent University
+Bilkent, 06800, Ankara, Turkey
+{dgokalp,saksoy}@cs.bilkent.edu.tr
+Abstract
+This paper describes our work on classification of outdoor
+scenes. First, images are partitioned into regions using
+one-class classification and patch-based clustering algorithms
+where one-class classifiers model the regions with
+relatively uniform color and texture properties, and clustering
+of patches aims to detect structures in the remaining
+regions. Next, the resulting regions are clustered to obtain
+a codebook of region types, and two models are constructed
+for scene representation: a ¡°bag of individual regions¡±
+representation where each region is regarded separately,
+and a ¡°bag of region pairs¡± representation where
+regions with particular spatial relationships are considered
+together. Given these representations, scene classification is
+done using Bayesian classifiers. We also propose a novel region
+selection algorithm that identifies region types that are
+frequently found in a particular class of scenes but rarely
+exist in other classes, and also consistently occur together
+in the same class of scenes. Experiments on the LabelMe
+data set showed that the proposed models significantly outperform
+a baseline global feature-based approach.
